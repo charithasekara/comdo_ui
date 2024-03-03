@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TestButtonComponent } from 'comdo-ui';
-
+import { TestButtonComponent } from '../../projects/comdo-ui/src/lib/test-button/test-button.component';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TestButtonComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, TestButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

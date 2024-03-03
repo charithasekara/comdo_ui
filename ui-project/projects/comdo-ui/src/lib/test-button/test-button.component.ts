@@ -1,18 +1,16 @@
-import { Component, Input, OnInit  } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-test-button',
   standalone: true,
   imports: [],
-  templateUrl: './test-button.component.html',
-  styleUrl: './test-button.component.css'
+  template: `
+    <button>{{ btnLabel }}</button>
+  `,
+  styleUrls: ['./test-button.component.css']
 })
-export class TestButtonComponent implements OnInit{
-  @Input('btnLabel') btnLabel: string= '';
+export class TestButtonComponent {
+  @Input('btnLabel') btnLabel: string = 'Run Test'; // Set default label
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

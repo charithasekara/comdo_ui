@@ -1,0 +1,16 @@
+button
+{
+  color: rgb(244, 244, 244);
+  background-color: rgb(139, 123, 203);
+  border: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
